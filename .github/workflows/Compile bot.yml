@@ -25,9 +25,9 @@ jobs:
     - name: "clone private check file，import username,token,repourl"
       run: |
         # add clone repo info
-        sed -i "s|compile_git_username|$GIT_UASERNAME|g" ./ddbot/utils/sync_repo.go
-        sed -i "s|compile_git_token|$GIT_TOKEN|g" ./ddbot/utils/sync_repo.go
-        sed -i "s|compile_repo_url|$REPO_URL|g" ./ddbot/utils/sync_repo.go
+        # sed -i "s|compile_git_username|$GIT_UASERNAME|g" ./ddbot/utils/sync_repo.go
+        # sed -i "s|compile_git_token|$GIT_TOKEN|g" ./ddbot/utils/sync_repo.go
+        # sed -i "s|compile_repo_url|$REPO_URL|g" ./ddbot/utils/sync_repo.go
 
         # add submitshare code info
         # sed -i "s|compile_submit_host|$SUBMIT_HOST|g" ./ddbot/utils/bot_tools.go
