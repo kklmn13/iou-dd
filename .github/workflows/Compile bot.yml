@@ -33,13 +33,13 @@ jobs:
         export GOOS=linux
 
         export GOARCH=amd64
-        go build -o ~/ddbot-amd64 ddbot.go
+        go build -o ~/ddbot-amd64 ./cmd/ddbot.go
 
         export GOARCH=arm64
-        go build -o ~/ddbot-arm64 ddbot.go
+        go build -o ~/ddbot-arm64 ./cmd/ddbot.go
 
         export GOARCH=arm
-        go build -o ~/ddbot-arm ddbot.go
+        go build -o ~/ddbot-arm ./cmd/ddbot.go
         
     - name: Commit files
       run: |
